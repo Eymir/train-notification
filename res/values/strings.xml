@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">Train Status</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home_screen">Train Status</string>
+	<string name="live_status">Live Train Status!</string>
+	<string name="setup_notify_screen">Setup Notifications</string>
+	<string name="add_notify_screen">Add Notifications</string>
+	
+	<!-- All the labels and button text that will be used -->
+    <string name="welcome_text">Welcome to "Train Notification" app</string>
+    <string name="live_status_button">Live Train Status!</string>
+    <string name="setup_notification_button">Setup Notification</string>
+    <string name="station_code_to_name_vice_versa_button">Trains between stations</string>
+    <string name="train_number_text">Train Number : </string>
+    <string name="date_text">Date : </string>
+    <string name="station_code_text">Station Code : </string>
+    <string name="fetch_location_button">Fetch location</string>
+    <string name="fetch_station_list_button">Fetch stations</string>
+    <string name="add_more_station_button">Add more station</string>
+    <string name="status_bar_switch">Enable Status Bar Notification</string>
+    <string name="sms_notify_switch">Enable SMS(s) Notification</string>
+    <string name="email_notify_switch">Enable Email Notification</string>
+    <string name="fetch_train_info">Go</string>
+    <string name="enter_train_number">Enter train number</string>
+    
+    <!-- Menu items -->
+    <string name="add_notify">Add</string>
+    <string name="edit_notify">Edit</string>
+    <string name="delete_notify">Delete</string>
+    
+    
+    <string name="spinner_station_prompt">Choose a station</string>
+    
+</resources>

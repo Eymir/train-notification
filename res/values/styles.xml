@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="dropDownSpinnerStyle" 
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>

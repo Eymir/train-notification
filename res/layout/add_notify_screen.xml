@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:longClickable="true" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayoutOuter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/trainNumberEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:ems="10"
+                android:hint="@string/enter_train_number"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/fetchStationListButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/fetch_train_info" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/stationListProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/trainNameAddNotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout 
+            android:id="@+id/linearLayout3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp" >
+        
+            <Spinner
+                android:id="@+id/stationListSpinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/removeStationSpinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+            
+        </LinearLayout>
+        
+        
+        <Button
+            android:id="@+id/AddMoreStationButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"            
+            android:text="@string/add_more_station_button" />
+
+        <Switch
+            android:id="@+id/statusBarNotifySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:text="@string/status_bar_switch" />
+
+        <Switch
+            android:id="@+id/smsNotifySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/sms_notify_switch" />
+
+        <Switch
+            android:id="@+id/emailNotifySwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="@string/email_notify_switch" />
+    </LinearLayout>
+
+</ScrollView>
